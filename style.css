@@ -1,11 +1,11 @@
 body{
     font-family: kreon;
-    padding: 0px 0px;
-    margin: 0px 0px;
+    padding: 0px;
+    margin: 0px;
     width: 100%;
     height: 100%;
-    max-width: 100%;
-    display: grid;
+    display: flex;
+    color: #484848;
 }
 
 .navbar{
@@ -13,16 +13,56 @@ body{
     height: 60px;
     background-color: #006400;
     color: white;
-    display: block;
+    display: flex;
     position: fixed;
-    top: 0px;
     box-shadow: black -10px -5px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .logo{
     display: flex;
     height: 80%;
-    width: auto;
-    text-align: center;
 }
+
+.container{
+    display: flex;
+    width: 100%;
+}
+
+.page{
+    margin-top: 80px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;;
+    align-items: flex-start;
+    height: 100%;
+}
+
+.page-left, .page-right{
+    display:flex ;
+    padding: 0px 0px;
+    height: 100%;
+    flex-wrap: nowrap;
+}
+
+.page-right{
+    background-color: green;
+    width: 50%;
+    border-radius: 2%;
+}
+
+.page-left{
+    background-color: silver;
+    width: 50%;
+}
+
+.footer{
+    display: flex;
+    color: black;
+    width: 100%;
+}
+.
 
