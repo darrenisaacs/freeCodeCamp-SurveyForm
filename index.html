@@ -1,56 +1,62 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <title></title>
+    <header>
+        <title>Developer Survey Form for Newbies</title>
         <link rel="stylesheet" href="style.css">
-        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-        <link href="https://fonts.googleapis.com/css?family=Kreon:300,400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Mitr:200,300,400,500,600,700&display=swap" rel="stylesheet">
 
 
-    </head>
-   <body>
-        <div class="navbar">
-            <img src="http://blog.markallenwebdeveloper.co.uk/wp-content/uploads/2018/09/freeCodeCamp.jpg" alt="freeCodeCamp" class="logo">
-        </div>
 
-        <!-- Main Content-->
+    </header>
 
-        <div class="container">
-            
-            <!--Page -->
-            <div class="page">
-                <!--Left Page -->
-                <div class="page-left">
-                    <div>
-                        <h1 id="title">We'd Like Your Feedback</h1>
-                        <p id="description">Tel what you enjoy about our platform and how you think we can improve</p>
-                    </div>
-                </div>
-                <!--Right Page-->
-                <div class="page-right">
-                    <div>
-                        <h2>Survey</h2>
-                        <form for>
+    <body>
+        <nav>
+            <h2>Developer Survey</h2>
+        </nav>
 
-                        </form>
-                    </div>
-                </div>
+        <div class="page">
+            <!--Informational Box-->
+            <div class="information">
+                <h1 id="title">Let Us Know What <br> You're Learning</h1>
+                <p id="description">As a new coder, we'd like to know which programming languages, platforms and technologies you're currently using. And which ones you'd like to learn in the furture. These could be for personal projects for for changing career paths</p>
             </div>
-        </div>
-        
-        <!--Footer-->
-        <div class="footer">
-            <div><h4 id="footer-details">Darren Isaacs Copyright &COPY 2019; </h4></div>
-               
+
+            <!--Survey Form Box-->
+            <div class="surveyform">
+                <form id="survey-form">
+                    <h2> Tell Us About<br>Your Coding Journey</h2>
+                    <div>
+                        <label for="name" id="name-label">Name & Surname</label>
+                        <input type="text" id="name" placeholder=" I am...">
+                    </div>
+                    <div>
+                        <label for="email" id="email-label">Email:</label>
+                        <input type="email" id="email" placeholder="name@domain.com...">
+                    </div>
+                    <div>
+                        <label for="number" id="number-label">Months Learning to Code</label>
+                        <input type="number" id="number" min="1" max="24">
+                    </div>
+                    <div>
+                        <label>Programming</label>
+                        <select>
+                            <option>Mobile App Development</option>
+                            <option>Desktop Applcatoin Development</option>
+                            <option>Game Development</option>
+                            <option>Fron-End Web Design</option>
+                            <option>Back-End Web Development</option>
+                            <option>IoT Devices</option>
+                        </select>
+                    </div>
+                    <div>
+
+                    </div>
+                    
+                </form>
+            </div>
             
         </div>
-    
-    
-    </div>
-
-
-       
-        
-   </body>
+    </body>
 </html>
