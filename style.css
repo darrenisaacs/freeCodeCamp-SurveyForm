@@ -10,12 +10,6 @@ body{
 
 }
 
-@media screen and (max-width: 600px){
-    nav {
-        background-image: linear-gradient(45deg, #1DE9B6, #00b8d4);
-    }
-}
-
 nav{
     position: fixed;
     display: flex;
@@ -51,17 +45,21 @@ nav{
     background-color: white;
 }
 
-/*input, select {
+.row{
     display: flex;
-    width: 50%;
-}*/
+    width: 100%;
+}
 
 
 .surveyform{
     display: flex;
-    width: 30%;
-    
+    width: 40%;
     padding:100px 60px;
+}
+
+#survey-form{
+    display: block;
+    width: 100%;
 }
 
 #title{
@@ -69,12 +67,56 @@ nav{
     font-weight: 600;
 }
 
-input, select{
-    border-radius: 4px;
+.form-row-tab{
     display: flex;
-    flex-basis: 100%;
+    box-sizing: border-box;
+    padding: 5px;
 }
 
+.label-text-align{
+    display: inline-block;
+    width: 30%;
+}
 
+.label-input-align{
+    display: inline-block;
+    width: 200px;
+}
 
+.label-input-align input{
+    display: inline-block;
+    width: 250px;
+}
 
+@media (max-width: 1000px){
+    nav {
+        background-image: linear-gradient(45deg, #1DE9B6, #00b8d4);
+    }
+
+    .form-row-tab{
+        display: block;
+        box-sizing: border-box;
+        padding: 5px;
+        width: 100%;
+}
+    .label-text-align{
+        display: flex;
+        width: 100%;
+        box-sizing: border-box;
+}
+
+    .label-input-align{
+        display: flex;
+        width: 100%;
+        box-sizing: border-box;
+}
+}
+
+.button{
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 1px 1px 6px;
+}
