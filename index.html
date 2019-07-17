@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 
 <html>
-    <header>
+    <head>
         <title>Developer Survey Form for Newbies</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
         <link href="https://fonts.googleapis.com/css?family=Mitr:200,300,400,500,600,700&display=swap" rel="stylesheet">
-
-
-
-    </header>
+    </head>
 
     <body>
         <nav>
@@ -27,23 +25,38 @@
             <div class="surveyform">
                 <form id="survey-form">
                     <h2> Tell Us About<br>Your Coding Journey</h2>
+
+                    <hr>
                     <div>
-                        <label for="name" id="name-label">Name & Surname</label>
-                        <input type="text" id="name" placeholder=" I am...">
+                        
+                        <div class="form-row">
+                            <label for="name" id="name-label">First Name</label>
+                            <input type="text" id="name" placeholder="First Name">
+                        </div>
                     </div>
+
+                    <div>
+                        <div>
+                            <label for="surname" id="surname-label">Last Name</label>
+                            <input type="text" id="name" placeholder="Last Name">
+                        </div>
+                        
+                    </div>
+
                     <div>
                         <label for="email" id="email-label">Email:</label>
                         <input type="email" id="email" placeholder="name@domain.com...">
                     </div>
+
                     <div>
                         <label for="number" id="number-label">Months Learning to Code</label>
                         <input type="number" id="number" min="1" max="24">
                     </div>
                     <div>
-                        <label>Programming</label>
+                        <label>Platform</label>
                         <select>
                             <option>Mobile App Development</option>
-                            <option>Desktop Applcatoin Development</option>
+                            <option>Desktop Application Development</option>
                             <option>Game Development</option>
                             <option>Fron-End Web Design</option>
                             <option>Back-End Web Development</option>
