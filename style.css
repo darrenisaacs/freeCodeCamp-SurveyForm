@@ -16,7 +16,7 @@ nav{
     width: 100%;
     height: 80px;
     justify-content: flex-start;
-    background-image: linear-gradient(45deg, #00b8d4, #1DE9B6);
+    background-image: linear-gradient(45deg,  #e57373, #ffb74d);
     box-shadow: black -1px -7px 20px;
     box-sizing: border-box;
     padding-left: 20px;
@@ -53,8 +53,10 @@ nav{
 
 .surveyform{
     display: flex;
+    background-color: #f5f5f5;
     width: 40%;
     padding:100px 60px;
+    box-shadow: #263238 -1px 5px 50px -30px;
 }
 
 #survey-form{
@@ -64,7 +66,10 @@ nav{
 
 #title{
     color: #263238;
-    font-weight: 600;
+    font-weight: bold;
+    background: -webkit-linear-gradient( 40deg, #e57373, #ffb74d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .form-row-tab{
@@ -88,9 +93,50 @@ nav{
     width: 250px;
 }
 
+input, select{
+    border: solid 0px;
+    border-color:silver;
+}
+
+::placeholder{
+    font-size: 0.9em;
+    color: silver;
+}
+
+.button{
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 1px 1px 6px;
+    border: 0;
+}
+
+#submit{
+     background-color: #26c6da;
+    box-shadow: silver 1px 1px 6px;
+    color: white;
+}
+
+#submit:hover{
+    background-color: transparent;
+    color: white;
+    border-width: medium;
+    box-shadow: none;
+    font-weight: bold;
+    color: #26c6da;
+    border-color: #26c6da;
+    border: solid 2px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+
+/*Media Query - Max Screen Size 1000px*/
 @media (max-width: 1000px){
     nav {
-        background-image: linear-gradient(45deg, #1DE9B6, #00b8d4);
+        background-image: linear-gradient(45deg, #ffb74d, #e57373);
     }
 
     .form-row-tab{
@@ -110,13 +156,56 @@ nav{
         width: 100%;
         box-sizing: border-box;
 }
+    #submit{
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
 }
 
-.button{
-    box-sizing: border-box;
-    padding: 10px;
-    border-radius: 5px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    box-shadow: 1px 1px 6px;
+/*Media Query - Max Screen Size 1000px*/
+@media only screen and (max-width: 600px) {
+
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav{
+        display: flex;
+        justify-content: center;
+    }
+
+    .information{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 100%;
+        align-content: flex-end;
+    }
+
+    .surveyform{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 100%;
+    }
+
+
+    .form-row-tab{
+        display: block;
+        box-sizing: border-box;
+        padding: 5px;
+        width: 100%;
+    }
+    .label-text-align{
+        display: flex;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .label-input-align{
+        display: flex;
+        width: 100%;
+        box-sizing: border-box;
+    }
 }
